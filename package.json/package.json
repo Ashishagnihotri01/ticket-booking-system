@@ -1,0 +1,26 @@
+{
+  "name": "ticket-booking-system",
+  "version": "1.0.0",
+  "description": "High-concurrency Ticket Booking System with TTL holds and auto-waitlist assignment.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "db:migrate": "npx prisma migrate dev",
+    "db:seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.11.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.13",
+    "qrcode": "^1.5.3",
+    "redis": "^4.6.13"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "prisma": "^5.11.0"
+  }
+}
